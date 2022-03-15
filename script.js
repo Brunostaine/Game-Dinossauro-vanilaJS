@@ -1,4 +1,5 @@
 const dino = document.querySelector('.dino')
+const background = document.querySelector('.background')
 
 let sePulando = false
 
@@ -33,8 +34,19 @@ function pular () {
             dino.style.bottom = position + 'px'
         }
     }, 20 )
-
-
 }
+
+//
+
+function criaCactus() {
+    const cactus = document.createElement('div')
+    let cactusPosition = 1000
+
+    cactus.classList.add('cactus')
+    cactus.style.left = 1000 + 'px'
+    background.appendChild(cactus)
+}
+
+criaCactus()
 
 document.addEventListener('keyup', dandleKeyUp)
