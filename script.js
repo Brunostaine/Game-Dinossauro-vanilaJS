@@ -2,6 +2,7 @@ const dino = document.querySelector('.dino')
 const background = document.querySelector('.background')
 
 let sePulando = false
+let position = 0
 
 function dandleKeyUp (event) {
     if(event.keyCode === 32){
@@ -12,7 +13,6 @@ function dandleKeyUp (event) {
 }
 
 function pular () {
-    let position = 0
 
     sePulando = true
 
@@ -51,7 +51,10 @@ function criaCactus() {
         if (cactusPosition <= -60) {
             clearInterval(leftInterval)
             background.removeChild(cactus)
-        } else {
+        } else if (cactusPosition > 0 && cactusPosition < 60 && position < 60){
+            clearInterval(leftInterval)
+            document.body.innerHTML = '<h1 class="game-over"> Game Over</h1>'
+        } {
             cactusPosition -= 10
             cactus.style.left = cactusPosition + 'px'
         } 
