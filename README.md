@@ -3,6 +3,7 @@
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=GREEN&style=for-the-badge)
  
+![game-dino](https://user-images.githubusercontent.com/87622645/158495843-7550ee92-c15e-44b9-ac08-a92b31ab8258.png)
 
 
 ## INDICE
@@ -30,10 +31,10 @@
 ## 📁 Acesso ao projeto
 
 **Acesso ao código do projeto**<br>
-
+https://github.com/Brunostaine/Game-Dinossauro-vanilaJS/
 
 **🛠️ Abrir e rodar o projeto**<br>
-
+https://game-dinossauro-brunostaine.netlify.app/
 
 ## Tecnologias utilizadas
 * HTML
