@@ -31,10 +31,10 @@
 ## 📁 Acesso ao projeto
 
 **Acesso ao código do projeto**<br>
-
+https://github.com/Brunostaine/Game-Dinossauro-vanilaJS/
 
 **🛠️ Abrir e rodar o projeto**<br>
-
+https://game-dinossauro-brunostaine.netlify.app/
 
 ## Tecnologias utilizadas
 * HTML
