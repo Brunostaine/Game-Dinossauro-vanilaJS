@@ -5,7 +5,7 @@ let sePulando = false
 let position = 0
 
 function dandleKeyUp (event) {
-    if(event.keyCode === 32){
+    if(event.keyCode === 32 || event.keyCode === 38){
         if(!sePulando){
             pular()
         }
