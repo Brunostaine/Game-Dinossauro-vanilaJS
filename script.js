@@ -1,5 +1,22 @@
-const dino = document.querySelector('.dino')
-const background = document.querySelector('.background')
+const background = document.querySelector('#background')
+const dino = document.querySelector('#dino')
+
+function iniciar() {    
+    criaCactus() 
+    criarTela()       
+}
+
+function criarTela() {
+    dino.classList.add('dino'),
+    background.classList.add('background')
+}
+
+meuButton = document.querySelector('.botaoJogar')
+meuButton.onclick = function (){
+        iniciar()    
+}
+
+// -----------------------------------------------------------------------------------------------
 
 let sePulando = false
 let position = 0
@@ -36,32 +53,46 @@ function pular () {
     }, 20 )
 }
 
-//
+// //
 
 function criaCactus() {
-    const cactus = document.createElement('div')
-    let cactusPosition = 1000
-    let randomTime = Math.random() + 6000
+                   
+                const cactus = document.createElement('div')
+                let cactusPosition = 1000
+                let randomTime = Math.random() + 6000
+            
 
-    cactus.classList.add('cactus')
-    cactus.style.left = 1000 + 'px'
-    background.appendChild(cactus)
+                cactus.classList.add('cactus')
+                cactus.style.left = 1000 + 'px'
+                background.appendChild(cactus)
 
-    let leftInterval = setInterval (() => {
-        if (cactusPosition <= -60) {
-            clearInterval(leftInterval)
-            background.removeChild(cactus)
-        } else if (cactusPosition > 0 && cactusPosition < 60 && position < 60){
-            clearInterval(leftInterval)
-            document.body.innerHTML = '<buttom class="reiniciar"> Reiniciar</buttom>'   
-        } {
-            cactusPosition -= 10
-            cactus.style.left = cactusPosition + 'px'
-        } 
-    }, 20 )
-    setTimeout(criaCactus, randomTime)
-}
+                let leftInterval = setInterval (() => {
+                if (cactusPosition <= -60) {
+                    clearInterval(leftInterval)
+                    background.removeChild(cactus)
+                } else if (cactusPosition > 0 && cactusPosition < 60 && position < 60){
+                    clearInterval(leftInterval)
+                    
+                    document.body.innerHTML = '<h1 class="game-over"> Game Over </h1> <buttom class="reiniciar"> Reiniciar</buttom>'  
+                    reiniciar = document.body.querySelector('.reiniciar')
 
-criaCactus()
+                    
 
+                    reiniciar.onclick = function (){
+                        reiniciarJogo()    
+                    }
+
+                    
+
+                } {
+                    cactusPosition -= 10
+                    cactus.style.left = cactusPosition + 'px'
+                } 
+            }, 20 )
+                setTimeout(criaCactus, randomTime)          
+            }
+
+            function reiniciarJogo() {
+                location.reload()
+            }
 document.addEventListener('keyup', dandleKeyUp)

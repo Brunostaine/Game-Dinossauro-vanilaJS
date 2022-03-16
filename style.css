@@ -9,7 +9,7 @@ body {
     justify-content: center;
 }
 
-button {
+.css {
     border: none;
     background-color: rgb(33, 201, 145);
     color: #fff;
@@ -22,7 +22,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.css:hover {
     background-color: rgb(15, 151, 106);
 }
 
@@ -73,8 +73,6 @@ button:hover {
     background-color: rgb(14, 184, 105);
 }
 
-
-
 @keyframes slideright {
     from {
         background-position: 70000%;
@@ -84,6 +82,7 @@ button:hover {
         background-position: 0;
     }
 }
+
 .background {
     position: absolute;
     bottom: 0;
@@ -92,4 +91,10 @@ button:hover {
     animation: slideright 600s infinite linear;
     width: 100%;
     height: 200px;
+}
+
+.ativa {
+    color: orange;
+    background: green;
+    font-size: 5rem;
 }
