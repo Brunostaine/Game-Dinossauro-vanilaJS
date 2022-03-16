@@ -1,7 +1,7 @@
 <h1 align="center"> GAME Dinossauro do google </h1>
 
 
-<h2> :construction: Projeto em construção :construction: </h2>
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=GREEN&style=for-the-badge)
  
 
 
