@@ -1,9 +1,8 @@
 <h1 align="center"> GAME Dinossauro do google </h1>
 
-
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=GREEN&style=for-the-badge)
  
-![game-dino](https://user-images.githubusercontent.com/87622645/158495843-7550ee92-c15e-44b9-ac08-a92b31ab8258.png)
+![dino-google](https://user-images.githubusercontent.com/87622645/158703407-cfc00b51-8e34-494b-a13a-4bc919686104.png)
 
 
 ## INDICE
