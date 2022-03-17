@@ -34,7 +34,7 @@ function pular () {
     sePulando = true
 
     let upInterval = setInterval (() => {
-        if (position >= 150) {
+        if (position >= 200) {
             clearInterval(upInterval)
 
     let downInterval = setInterval(() => {
@@ -45,12 +45,12 @@ function pular () {
             position -= 20
             dino.style.bottom = position + 'px'
         }
-    }, 20 )        
+    }, 18 )        
         }else {
             position += 20
             dino.style.bottom = position + 'px'
         }
-    }, 20 )
+    }, 18 )
 }
 
 // //
@@ -59,7 +59,7 @@ function criaCactus() {
                    
                 const cactus = document.createElement('div')
                 let cactusPosition = 1000
-                let randomTime = Math.random() + 6000
+                let randomTime = Math.random() + 8000
             
 
                 cactus.classList.add('cactus')
@@ -67,23 +67,17 @@ function criaCactus() {
                 background.appendChild(cactus)
 
                 let leftInterval = setInterval (() => {
-                if (cactusPosition <= -60) {
+                if (cactusPosition <= -55) {
                     clearInterval(leftInterval)
                     background.removeChild(cactus)
-                } else if (cactusPosition > 0 && cactusPosition < 60 && position < 60){
+                } else if (cactusPosition > 0 && cactusPosition < 55 && position < 55){
                     clearInterval(leftInterval)
                     
                     document.body.innerHTML = '<h1 class="game-over"> Game Over </h1> <buttom class="reiniciar"> Reiniciar</buttom>'  
                     reiniciar = document.body.querySelector('.reiniciar')
-
-                    
-
                     reiniciar.onclick = function (){
                         reiniciarJogo()    
                     }
-
-                    
-
                 } {
                     cactusPosition -= 10
                     cactus.style.left = cactusPosition + 'px'
